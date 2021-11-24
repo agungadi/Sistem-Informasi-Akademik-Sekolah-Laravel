@@ -1,0 +1,33 @@
+{
+  "name": "Sistem-Informasi-Akademik-Sekolah-Laravel",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Selamat datang di Sistem Informasi Akademik Sekolah! 👋</h1>",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "cypress": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "cypress-file-upload": "^5.0.8",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agungadi/Sistem-Informasi-Akademik-Sekolah-Laravel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agungadi/Sistem-Informasi-Akademik-Sekolah-Laravel/issues"
+  },
+  "homepage": "https://github.com/agungadi/Sistem-Informasi-Akademik-Sekolah-Laravel#readme"
+}
