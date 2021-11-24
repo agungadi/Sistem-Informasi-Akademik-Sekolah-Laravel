@@ -1,0 +1,1548 @@
+{
+  "ignition.healthCheck": {
+    "name": "ignition.healthCheck",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\HealthCheckController",
+    "uri": "_ignition/health-check",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ignition.executeSolution": {
+    "name": "ignition.executeSolution",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ExecuteSolutionController",
+    "uri": "_ignition/execute-solution",
+    "method": [
+      "POST"
+    ]
+  },
+  "ignition.shareReport": {
+    "name": "ignition.shareReport",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ShareReportController",
+    "uri": "_ignition/share-report",
+    "method": [
+      "POST"
+    ]
+  },
+  "ignition.scripts": {
+    "name": "ignition.scripts",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ScriptController",
+    "uri": "_ignition/scripts/{script}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ignition.styles": {
+    "name": "ignition.styles",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\StyleController",
+    "uri": "_ignition/styles/{style}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cypress.factory": {
+    "name": "cypress.factory",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@factory",
+    "uri": "__cypress__/factory",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.login": {
+    "name": "cypress.login",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@login",
+    "uri": "__cypress__/login",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.logout": {
+    "name": "cypress.logout",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@logout",
+    "uri": "__cypress__/logout",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.artisan": {
+    "name": "cypress.artisan",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@artisan",
+    "uri": "__cypress__/artisan",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.run-php": {
+    "name": "cypress.run-php",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@runPhp",
+    "uri": "__cypress__/run-php",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.csrf-token": {
+    "name": "cypress.csrf-token",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@csrfToken",
+    "uri": "__cypress__/csrf_token",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cypress.routes": {
+    "name": "cypress.routes",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@routes",
+    "uri": "__cypress__/routes",
+    "method": [
+      "POST"
+    ]
+  },
+  "": {
+    "name": null,
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@cetak_pdf",
+    "uri": "jadwalkelaspdf/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "login": {
+    "name": "login",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\LoginController@showLoginForm",
+    "uri": "login",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "logout": {
+    "name": "logout",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\LoginController@logout",
+    "uri": "logout",
+    "method": [
+      "POST"
+    ]
+  },
+  "register": {
+    "name": "register",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\RegisterController@showRegistrationForm",
+    "uri": "register",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.request": {
+    "name": "password.request",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ForgotPasswordController@showLinkRequestForm",
+    "uri": "password/reset",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.email": {
+    "name": "password.email",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ForgotPasswordController@sendResetLinkEmail",
+    "uri": "password/email",
+    "method": [
+      "POST"
+    ]
+  },
+  "password.reset": {
+    "name": "password.reset",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ResetPasswordController@showResetForm",
+    "uri": "password/reset/{token}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.update": {
+    "name": "password.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ResetPasswordController@reset",
+    "uri": "password/reset",
+    "method": [
+      "POST"
+    ]
+  },
+  "password.confirm": {
+    "name": "password.confirm",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ConfirmPasswordController@showConfirmForm",
+    "uri": "password/confirm",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cek-email": {
+    "name": "cek-email",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@email",
+    "uri": "cek-email",
+    "method": [
+      "POST"
+    ]
+  },
+  "reset.password": {
+    "name": "reset.password",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@password",
+    "uri": "reset/password/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "reset.password.update": {
+    "name": "reset.password.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@update_password",
+    "uri": "reset/password/update/{id}",
+    "method": [
+      "PATCH"
+    ]
+  },
+  "home": {
+    "name": "home",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\HomeController@index",
+    "uri": "home",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "profile": {
+    "name": "profile",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@profile",
+    "uri": "profile",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "pengaturan.profile": {
+    "name": "pengaturan.profile",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit_profile",
+    "uri": "pengaturan/profile",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "pengaturan.ubah-profile": {
+    "name": "pengaturan.ubah-profile",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@ubah_profile",
+    "uri": "pengaturan/ubah-profile",
+    "method": [
+      "POST"
+    ]
+  },
+  "pengaturan.edit-foto": {
+    "name": "pengaturan.edit-foto",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit_foto",
+    "uri": "pengaturan/edit-foto",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "pengaturan.ubah-foto": {
+    "name": "pengaturan.ubah-foto",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@ubah_foto",
+    "uri": "pengaturan/ubah-foto",
+    "method": [
+      "POST"
+    ]
+  },
+  "pengaturan.email": {
+    "name": "pengaturan.email",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit_email",
+    "uri": "pengaturan/email",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "pengaturan.ubah-email": {
+    "name": "pengaturan.ubah-email",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@ubah_email",
+    "uri": "pengaturan/ubah-email",
+    "method": [
+      "POST"
+    ]
+  },
+  "pengaturan.password": {
+    "name": "pengaturan.password",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit_password",
+    "uri": "pengaturan/password",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "pengaturan.ubah-password": {
+    "name": "pengaturan.ubah-password",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@ubah_password",
+    "uri": "pengaturan/ubah-password",
+    "method": [
+      "POST"
+    ]
+  },
+  "jadwal.siswa": {
+    "name": "jadwal.siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@siswa",
+    "uri": "jadwal/siswa",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan.siswa": {
+    "name": "ulangan.siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@siswa",
+    "uri": "ulangan/siswa",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap.siswa": {
+    "name": "sikap.siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@siswa",
+    "uri": "sikap/siswa",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot.siswa": {
+    "name": "rapot.siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@siswa",
+    "uri": "rapot/siswa",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "absen.harian": {
+    "name": "absen.harian",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@absen",
+    "uri": "absen/harian",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "absen.simpan": {
+    "name": "absen.simpan",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@simpan",
+    "uri": "absen/simpan",
+    "method": [
+      "POST"
+    ]
+  },
+  "jadwal.guru": {
+    "name": "jadwal.guru",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@guru",
+    "uri": "jadwal/guru",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "nilai.index": {
+    "name": "nilai.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@index",
+    "uri": "nilai",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "nilai.create": {
+    "name": "nilai.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@create",
+    "uri": "nilai/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "nilai.store": {
+    "name": "nilai.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@store",
+    "uri": "nilai",
+    "method": [
+      "POST"
+    ]
+  },
+  "nilai.show": {
+    "name": "nilai.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@show",
+    "uri": "nilai/{nilai}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "nilai.edit": {
+    "name": "nilai.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@edit",
+    "uri": "nilai/{nilai}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "nilai.update": {
+    "name": "nilai.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@update",
+    "uri": "nilai/{nilai}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "nilai.destroy": {
+    "name": "nilai.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@destroy",
+    "uri": "nilai/{nilai}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "ulangan.index": {
+    "name": "ulangan.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@index",
+    "uri": "ulangan",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan.create": {
+    "name": "ulangan.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@create",
+    "uri": "ulangan/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan.store": {
+    "name": "ulangan.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@store",
+    "uri": "ulangan",
+    "method": [
+      "POST"
+    ]
+  },
+  "ulangan.show": {
+    "name": "ulangan.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@show",
+    "uri": "ulangan/{ulangan}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan.edit": {
+    "name": "ulangan.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@edit",
+    "uri": "ulangan/{ulangan}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan.update": {
+    "name": "ulangan.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@update",
+    "uri": "ulangan/{ulangan}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "ulangan.destroy": {
+    "name": "ulangan.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@destroy",
+    "uri": "ulangan/{ulangan}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "sikap.index": {
+    "name": "sikap.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@index",
+    "uri": "sikap",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap.create": {
+    "name": "sikap.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@create",
+    "uri": "sikap/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap.store": {
+    "name": "sikap.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@store",
+    "uri": "sikap",
+    "method": [
+      "POST"
+    ]
+  },
+  "sikap.show": {
+    "name": "sikap.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@show",
+    "uri": "sikap/{sikap}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap.edit": {
+    "name": "sikap.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@edit",
+    "uri": "sikap/{sikap}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap.update": {
+    "name": "sikap.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@update",
+    "uri": "sikap/{sikap}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "sikap.destroy": {
+    "name": "sikap.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@destroy",
+    "uri": "sikap/{sikap}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "rapot.index": {
+    "name": "rapot.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@index",
+    "uri": "rapot",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot.create": {
+    "name": "rapot.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@create",
+    "uri": "rapot/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot.store": {
+    "name": "rapot.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@store",
+    "uri": "rapot",
+    "method": [
+      "POST"
+    ]
+  },
+  "rapot.show": {
+    "name": "rapot.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@show",
+    "uri": "rapot/{rapot}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot.edit": {
+    "name": "rapot.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@edit",
+    "uri": "rapot/{rapot}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot.update": {
+    "name": "rapot.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@update",
+    "uri": "rapot/{rapot}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "rapot.destroy": {
+    "name": "rapot.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@destroy",
+    "uri": "rapot/{rapot}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "jadwal.trash": {
+    "name": "jadwal.trash",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@trash",
+    "uri": "jadwal/trash",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.restore": {
+    "name": "jadwal.restore",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@restore",
+    "uri": "jadwal/restore/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.kill": {
+    "name": "jadwal.kill",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@kill",
+    "uri": "jadwal/kill/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "guru.trash": {
+    "name": "guru.trash",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@trash",
+    "uri": "guru/trash",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.restore": {
+    "name": "guru.restore",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@restore",
+    "uri": "guru/restore/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.kill": {
+    "name": "guru.kill",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@kill",
+    "uri": "guru/kill/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "kelas.trash": {
+    "name": "kelas.trash",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@trash",
+    "uri": "kelas/trash",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "kelas.restore": {
+    "name": "kelas.restore",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@restore",
+    "uri": "kelas/restore/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "kelas.kill": {
+    "name": "kelas.kill",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@kill",
+    "uri": "kelas/kill/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "siswa.trash": {
+    "name": "siswa.trash",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@trash",
+    "uri": "siswa/trash",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.restore": {
+    "name": "siswa.restore",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@restore",
+    "uri": "siswa/restore/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.kill": {
+    "name": "siswa.kill",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@kill",
+    "uri": "siswa/kill/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "mapel.trash": {
+    "name": "mapel.trash",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@trash",
+    "uri": "mapel/trash",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "mapel.restore": {
+    "name": "mapel.restore",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@restore",
+    "uri": "mapel/restore/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "mapel.kill": {
+    "name": "mapel.kill",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@kill",
+    "uri": "mapel/kill/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "user.trash": {
+    "name": "user.trash",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@trash",
+    "uri": "user/trash",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.restore": {
+    "name": "user.restore",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@restore",
+    "uri": "user/restore/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.kill": {
+    "name": "user.kill",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@kill",
+    "uri": "user/kill/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "admin.home": {
+    "name": "admin.home",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\HomeController@admin",
+    "uri": "admin/home",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "admin.pengumuman": {
+    "name": "admin.pengumuman",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PengumumanController@index",
+    "uri": "admin/pengumuman",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "admin.pengumuman.simpan": {
+    "name": "admin.pengumuman.simpan",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PengumumanController@simpan",
+    "uri": "admin/pengumuman/simpan",
+    "method": [
+      "POST"
+    ]
+  },
+  "guru.absensi": {
+    "name": "guru.absensi",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@absensi",
+    "uri": "guru/absensi",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.kehadiran": {
+    "name": "guru.kehadiran",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@kehadiran",
+    "uri": "guru/kehadiran/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.mapel": {
+    "name": "guru.mapel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@mapel",
+    "uri": "guru/mapel/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.ubah-foto": {
+    "name": "guru.ubah-foto",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@ubah_foto",
+    "uri": "guru/ubah-foto/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.update-foto": {
+    "name": "guru.update-foto",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@update_foto",
+    "uri": "guru/update-foto/{id}",
+    "method": [
+      "POST"
+    ]
+  },
+  "guru.upload": {
+    "name": "guru.upload",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@upload",
+    "uri": "guru/upload",
+    "method": [
+      "POST"
+    ]
+  },
+  "guru.export_excel": {
+    "name": "guru.export_excel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@export_excel",
+    "uri": "guru/export_excel",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.import_excel": {
+    "name": "guru.import_excel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@import_excel",
+    "uri": "guru/import_excel",
+    "method": [
+      "POST"
+    ]
+  },
+  "guru.deleteAll": {
+    "name": "guru.deleteAll",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@deleteAll",
+    "uri": "guru/deleteAll",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "guru.index": {
+    "name": "guru.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@index",
+    "uri": "guru",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.create": {
+    "name": "guru.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@create",
+    "uri": "guru/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.store": {
+    "name": "guru.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@store",
+    "uri": "guru",
+    "method": [
+      "POST"
+    ]
+  },
+  "guru.show": {
+    "name": "guru.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@show",
+    "uri": "guru/{guru}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.edit": {
+    "name": "guru.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@edit",
+    "uri": "guru/{guru}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "guru.update": {
+    "name": "guru.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@update",
+    "uri": "guru/{guru}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "guru.destroy": {
+    "name": "guru.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GuruController@destroy",
+    "uri": "guru/{guru}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "kelas.index": {
+    "name": "kelas.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@index",
+    "uri": "kelas",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "kelas.create": {
+    "name": "kelas.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@create",
+    "uri": "kelas/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "kelas.store": {
+    "name": "kelas.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@store",
+    "uri": "kelas",
+    "method": [
+      "POST"
+    ]
+  },
+  "kelas.show": {
+    "name": "kelas.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@show",
+    "uri": "kelas/{kela}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "kelas.edit": {
+    "name": "kelas.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@edit",
+    "uri": "kelas/{kela}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "kelas.update": {
+    "name": "kelas.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@update",
+    "uri": "kelas/{kela}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "kelas.destroy": {
+    "name": "kelas.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\KelasController@destroy",
+    "uri": "kelas/{kela}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "siswa.kelas": {
+    "name": "siswa.kelas",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@kelas",
+    "uri": "siswa/kelas/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.ubah-foto": {
+    "name": "siswa.ubah-foto",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@ubah_foto",
+    "uri": "siswa/ubah-foto/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.update-foto": {
+    "name": "siswa.update-foto",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@update_foto",
+    "uri": "siswa/update-foto/{id}",
+    "method": [
+      "POST"
+    ]
+  },
+  "siswa.export_excel": {
+    "name": "siswa.export_excel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@export_excel",
+    "uri": "siswa/export_excel",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.import_excel": {
+    "name": "siswa.import_excel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@import_excel",
+    "uri": "siswa/import_excel",
+    "method": [
+      "POST"
+    ]
+  },
+  "siswa.deleteAll": {
+    "name": "siswa.deleteAll",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@deleteAll",
+    "uri": "siswa/deleteAll",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "siswa.index": {
+    "name": "siswa.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@index",
+    "uri": "siswa",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.create": {
+    "name": "siswa.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@create",
+    "uri": "siswa/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.store": {
+    "name": "siswa.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@store",
+    "uri": "siswa",
+    "method": [
+      "POST"
+    ]
+  },
+  "siswa.show": {
+    "name": "siswa.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@show",
+    "uri": "siswa/{siswa}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.edit": {
+    "name": "siswa.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@edit",
+    "uri": "siswa/{siswa}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "siswa.update": {
+    "name": "siswa.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@update",
+    "uri": "siswa/{siswa}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "siswa.destroy": {
+    "name": "siswa.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SiswaController@destroy",
+    "uri": "siswa/{siswa}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "mapel.index": {
+    "name": "mapel.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@index",
+    "uri": "mapel",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "mapel.create": {
+    "name": "mapel.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@create",
+    "uri": "mapel/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "mapel.store": {
+    "name": "mapel.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@store",
+    "uri": "mapel",
+    "method": [
+      "POST"
+    ]
+  },
+  "mapel.show": {
+    "name": "mapel.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@show",
+    "uri": "mapel/{mapel}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "mapel.edit": {
+    "name": "mapel.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@edit",
+    "uri": "mapel/{mapel}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "mapel.update": {
+    "name": "mapel.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@update",
+    "uri": "mapel/{mapel}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "mapel.destroy": {
+    "name": "mapel.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MapelController@destroy",
+    "uri": "mapel/{mapel}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "jadwal.export_excel": {
+    "name": "jadwal.export_excel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@export_excel",
+    "uri": "jadwal/export_excel",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.import_excel": {
+    "name": "jadwal.import_excel",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@import_excel",
+    "uri": "jadwal/import_excel",
+    "method": [
+      "POST"
+    ]
+  },
+  "jadwal.deleteAll": {
+    "name": "jadwal.deleteAll",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@deleteAll",
+    "uri": "jadwal/deleteAll",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "jadwal.index": {
+    "name": "jadwal.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@index",
+    "uri": "jadwal",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.create": {
+    "name": "jadwal.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@create",
+    "uri": "jadwal/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.store": {
+    "name": "jadwal.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@store",
+    "uri": "jadwal",
+    "method": [
+      "POST"
+    ]
+  },
+  "jadwal.show": {
+    "name": "jadwal.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@show",
+    "uri": "jadwal/{jadwal}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.edit": {
+    "name": "jadwal.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@edit",
+    "uri": "jadwal/{jadwal}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "jadwal.update": {
+    "name": "jadwal.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@update",
+    "uri": "jadwal/{jadwal}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "jadwal.destroy": {
+    "name": "jadwal.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\JadwalController@destroy",
+    "uri": "jadwal/{jadwal}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "ulangan-kelas": {
+    "name": "ulangan-kelas",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@create",
+    "uri": "ulangan-kelas",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan-siswa": {
+    "name": "ulangan-siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@edit",
+    "uri": "ulangan-siswa/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ulangan-show": {
+    "name": "ulangan-show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UlanganController@ulangan",
+    "uri": "ulangan-show/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap-kelas": {
+    "name": "sikap-kelas",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@create",
+    "uri": "sikap-kelas",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap-siswa": {
+    "name": "sikap-siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@edit",
+    "uri": "sikap-siswa/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "sikap-show": {
+    "name": "sikap-show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\SikapController@sikap",
+    "uri": "sikap-show/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot-kelas": {
+    "name": "rapot-kelas",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@create",
+    "uri": "rapot-kelas",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot-siswa": {
+    "name": "rapot-siswa",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@edit",
+    "uri": "rapot-siswa/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "rapot-show": {
+    "name": "rapot-show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\RapotController@rapot",
+    "uri": "rapot-show/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "predikat": {
+    "name": "predikat",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NilaiController@create",
+    "uri": "predikat",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.index": {
+    "name": "user.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@index",
+    "uri": "user",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.create": {
+    "name": "user.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@create",
+    "uri": "user/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.store": {
+    "name": "user.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@store",
+    "uri": "user",
+    "method": [
+      "POST"
+    ]
+  },
+  "user.show": {
+    "name": "user.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@show",
+    "uri": "user/{user}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.edit": {
+    "name": "user.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit",
+    "uri": "user/{user}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.update": {
+    "name": "user.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@update",
+    "uri": "user/{user}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "user.destroy": {
+    "name": "user.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@destroy",
+    "uri": "user/{user}",
+    "method": [
+      "DELETE"
+    ]
+  }
+}
