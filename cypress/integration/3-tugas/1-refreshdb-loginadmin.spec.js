@@ -18,6 +18,7 @@ describe('Refresh Database', () => {
         cy.visit("/login");
         cy.url().should('include','/login');
         cy.get("#email").type(this.admin.email);
+        cy.wait(1500);
         cy.get("#password").type(this.admin.password);
         cy.get("#btn-login").click();
         cy.contains("Dashboard").should("be.visible");
