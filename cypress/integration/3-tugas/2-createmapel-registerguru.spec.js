@@ -58,8 +58,8 @@ it("Create Guru", function () {
     cy.get('#foto').attachFile('firman.jpg');
     cy.get('body > div.wrapper > div.content-wrapper > section > div > div > div.modal.fade.bd-example-modal-lg.show > div > div > div.modal-footer.justify-content-between > button.btn.btn-primary').click();
     
-    cy.logout();
-    cy.url().should('include','/');;
+   
+ 
     cy.wait(3000);
 
     cy.get('#btnGroupDrop1').click()
