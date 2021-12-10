@@ -22,6 +22,10 @@ describe('Refresh Database', () => {
         cy.get("#password").type(this.admin.password);
         cy.get("#btn-login").click();
         cy.contains("Dashboard").should("be.visible");
+
+        cy.logout();
+
+        cy.visit('/').assertRedirect('/login');
     });
     });
 });
