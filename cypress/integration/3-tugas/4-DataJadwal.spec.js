@@ -5,6 +5,7 @@ describe("Login Admin", function () {
         cy.visit("/login");
         cy.url().should('include','/login');
         cy.get("#email").type(this.admin.email);
+        cy.wait(1500)
         cy.get("#password").type(this.admin.password);
         cy.get("#btn-login").click();
         cy.contains("Dashboard").should("be.visible");
@@ -21,9 +22,9 @@ it("Tambah Data Kelas", function () {
     cy.contains("Data Jadwal").should("be.visible");
     cy.get("body > div.wrapper > div.content-wrapper > section > div > div > div.col-md-12 > div > div.card-header > h3 > button.btn.btn-default.btn-sm").click()
     cy.get("#select2-hari_id-container").click().get('#hari_id').select('Senin', { force: true })
-
+    
     cy.get("#jam_mulai").type("07:00")
-    cy.get("#select2-kelas_id-container").click().get('#kelas_id').select('SEPULUH E', { force: true })
+    cy.get("#select2-kelas_id-container").click().get('#kelas_id').select('SEPULUH A', { force: true })
     cy.get("#jam_selesai").type("10:00")
 
     cy.get("#select2-guru_id-container").click().get('#guru_id').select('104', { force: true })
@@ -31,7 +32,13 @@ it("Tambah Data Kelas", function () {
     cy.get("#select2-ruang_id-container").click().get('#ruang_id').select('Ruang 01', { force: true })
 
     cy.get("body > div.wrapper > div.content-wrapper > section > div > div > div.modal.fade.bd-example-modal-lg.tambah-jadwal.show > div > div > div.modal-footer.justify-content-between > button.btn.btn-primary").click()
-   
+    cy.wait(1500)
+    cy.get("body > div.wrapper > div.content-wrapper > section > div > div > div.col-md-12 > div > div.card-header > h3 > a").click();
+    cy.get("body > div.wrapper > div.content-wrapper > section > div > div > div.col-md-12 > div > div.card-header > h3 > button.btn.btn-primary.btn-sm").click()
+    cy.get('#importExcel > div > form > div > div.modal-body > div.form-group > input[type=file]').attachFile('jadwal.xlsx');
+    cy.wait(1500)
+    cy.get("#importExcel > div > form > div > div.modal-footer > button.btn.btn-primary").click();
+    cy.get("#example1 > tbody > tr > td:nth-child(3) > a").click();
 });
 
 });
